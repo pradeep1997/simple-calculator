@@ -1,0 +1,91 @@
+<!-- Project Created By: Pradeep Kumar Yadav 
+For any Query and Suggestion please mail me: pkyadav3444@gmail.com  -->
+<!-- Program starts here  -->
+<html>
+<!-- Head tarts here  -->
+<head>
+    <title>Simple Calculator</title>
+    <!-- CSS inserted here  -->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!-- JavaScript started here  -->
+    <script language="javascript">
+        function addNumbers() {
+            var val1 = parseFloat(document.getElementById("value1").value);
+            var val2 = parseFloat(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1 + val2;
+        }
+
+        function subNumbers() {
+            var val1 = parseFloat(document.getElementById("value1").value);
+            var val2 = parseFloat(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1 - val2;
+        }
+
+        function mulNumbers() {
+            var val1 = parseFloat(document.getElementById("value1").value);
+            var val2 = parseFloat(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1 * val2;
+        }
+
+        function divNumbers() {
+            var val1 = parseFloat(document.getElementById("value1").value);
+            var val2 = parseFloat(document.getElementById("value2").value);
+            var ansD = document.getElementById("answer");
+            ansD.value = val1 / val2;
+        }
+    </script>
+    <!-- JavaScript ends here  -->
+</head>
+<!-- Head ends here  -->
+
+<!-- Body starts here  -->
+<body>
+    <!-- Header starts here  -->
+    <header class="header">
+        <h1 class="h1">Simple Calculator</h1>
+    </header>
+    <!-- Container starts here  -->
+    <div class="container">
+        <h2 class="h2">Enter your values here</h2>
+        <!-- Form starts here  -->
+        <form class="form">
+            <input type="text" id="value1" name="value1" class="input" value="" placeholder="Enter First Values" />
+            <input type="text" id="value2" name="value2" class="input" value="" placeholder="Enter Second Values" />
+            <input type="text" id="answer" name="answer" class="input" value="" placeholder="Result" /></br>
+            <input type="button" name="Sumbit" class="btn" value="ADD" onclick="javascript:addNumbers()"
+                style="background-color: rgb(29, 238, 10);" />
+            <input type="button" name="Sumbit" class="btn" value="SUB" onclick="javascript:subNumbers()"
+                style="background-color: rgb(236, 2, 2);" />
+            <input type="button" name="Sumbit" class="btn" value="MUL" onclick="javascript:mulNumbers()"
+                style="background-color: rgb(27, 3, 243);" />
+            <input type="button" name="Sumbit" class="btn" value="DIV" onclick="javascript:divNumbers()"
+                style="background-color: rgb(8, 253, 241);" />
+        </form>
+        <!-- Form ends here  -->
+    </div>
+    <!-- Container ends here  -->
+    <!-- Footer starts here  -->
+    <div class="footer">
+        <div class="part1">
+            <h1 class="h1">Simple Calculator</h1>
+        </div>
+        <div class="part2">
+            <h4 class="h4">Follow Me:</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mr-rao/">Linkedin</a></li>
+                <li><a href="https://github.com/pradeep1997">Github</a></li>
+                <li><a href="https://www.facebook.com/raosahab1997/">FaceBook</a></li>
+            </ul>
+        </div>
+        <div class="part3">
+            <h3 class="h3">Copyright @ Pradeep Kumar Yadav</h3>
+        </div>
+    </div>
+    <!-- Footer ends here  -->
+</body>
+<!-- Body ends here  -->
+</html>
+<!-- Program ends here  -->
